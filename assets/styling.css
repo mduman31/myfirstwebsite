@@ -1,8 +1,8 @@
-/* Core Layout with Mermaid Aesthetic */
+/* Core Layout with Deep Purple & Metallic Gold Aesthetic */
 body {
-    background-color: #4db6ac; /* Mermaid teal/aqua color */
-    color: #D3AF37; /* gold text for contrast */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cute, clean modern font */
+    background-color: #1a0b2e; /* Luxury deep royal purple background */
+    color: #e6c687; /* Soft metallic gold base color for body text readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     margin: 0;
     padding: 40px 20px;
     display: flex;
@@ -21,22 +21,31 @@ header {
     margin-bottom: 40px;
 }
 
+/* Polished Metallic Gold Gradient for main words/headings */
 h1 {
     font-size: 2.8rem;
-    color: #e0f2f1; /* Light mint headings */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6));
     margin-bottom: 10px;
+    font-weight: 800;
 }
 
 .intro-text {
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 700;
     margin: 5px 0;
+    /* Secondary metallic gold blend for high contrast wording */
+    background: linear-gradient(90deg, #F3E7C4, #D4AF37, #F3E7C4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .sub-text {
     font-size: 1.1rem;
     opacity: 0.9;
+    color: #e6c687;
 }
 
 /* Responsive Frosted Glass Cards Setup */
@@ -48,47 +57,54 @@ h1 {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.15); /* Translucent background layout */
-    backdrop-filter: blur(8px); /* Frosted effect */
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    /* Translucent purple tinted glass */
+    background: rgba(43, 22, 79, 0.25); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    /* Thin metallic gold border frame */
+    border: 1px solid rgba(212, 175, 55, 0.3); 
     border-radius: 16px;
     padding: 25px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Smooth floating lift */
-    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); 
+    border-color: rgba(250, 245, 183, 0.8); /* Glows brighter metallic gold on hover */
+    box-shadow: 0 12px 40px 0 rgba(212, 175, 55, 0.15);
 }
 
 .card h3 {
     margin-top: 0;
-    color: #e0f2f1;
     font-size: 1.3rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* Metallic gold text for internal card headings */
+    background: linear-gradient(135deg, #FCF6BA, #BF953F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
     padding-bottom: 10px;
 }
 
 .card h2 {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: #ffffff; /* Bright white for primary card values to stand out */
     margin: 15px 0 5px 0;
 }
 
 /* Badge decoration for Fortnite section */
 .badge {
     display: inline-block;
-    background-color: #B870FF;
-    color: #ffffff;
+    /* Solid metallic gold badge background with dark text */
+    background: linear-gradient(135deg, #BF953F, #FCF6BA);
+    color: #1a0b2e; 
     padding: 5px 12px;
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: bold;
     margin-top: 10px;
     text-transform: uppercase;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* Custom alignment for live weather frame block */
