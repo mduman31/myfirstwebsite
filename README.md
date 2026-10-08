@@ -3,7 +3,7 @@
 Welcome to my personal website project! This is a mermaid-themed webpage built from scratch using HTML and CSS. 
 
 ## 🌐 Live Demo
-You can view my live website here: **[https://github.io](https://github.io)**
+You can view my live website here: *(https://github.com/mduman31/myfirstwebsite)*
 
 ---
 
