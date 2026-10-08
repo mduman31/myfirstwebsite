@@ -1,12 +1,104 @@
+/* Core Layout with Mermaid Aesthetic */
 body {
     background-color: #4db6ac; /* Mermaid teal/aqua color */
     color: #ffffff; /* White text for contrast */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cute, modern font */
-    text-align: center; /* Centers all text, including headings */
-    padding-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cute, clean modern font */
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-h1, h2 {
-    color: #e0f2f1; /* Light, soft mint color for headings */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Adds a subtle depth */
+.container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #e0f2f1; /* Light mint headings */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.sub-text {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Responsive Frosted Glass Cards Setup */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 10px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15); /* Translucent background layout */
+    backdrop-filter: blur(8px); /* Frosted effect */
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Smooth floating lift */
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #e0f2f1;
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 15px 0 5px 0;
+}
+
+/* Badge decoration for Fortnite section */
+.badge {
+    display: inline-block;
+    background-color: #00acc1;
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Custom alignment for live weather frame block */
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#openweathermap-widget-11 {
+    width: 100% !important;
+    margin-top: 10px;
 }
