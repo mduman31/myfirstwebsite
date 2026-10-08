@@ -1,7 +1,7 @@
 /* Core Layout with Mermaid Aesthetic */
 body {
     background-color: #4db6ac; /* Mermaid teal/aqua color */
-    color: #ffffff; /* White text for contrast */
+    color: #D3AF37; /* gold text for contrast */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cute, clean modern font */
     margin: 0;
     padding: 40px 20px;
@@ -80,7 +80,7 @@ h1 {
 /* Badge decoration for Fortnite section */
 .badge {
     display: inline-block;
-    background-color: #00acc1;
+    background-color: #B870FF;
     color: #ffffff;
     padding: 5px 12px;
     border-radius: 20px;
