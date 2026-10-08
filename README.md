@@ -1,50 +1,26 @@
 # My First Website 🧜‍♀️
 
-Welcome to my personal website project! This is a mermaid-themed webpage built from scratch using HTML and CSS. 
+Welcome to my personal website project! This is a responsive, mermaid-themed personal page built using HTML and CSS, featuring custom frosted-glass info cards and a live weather widget.
 
 ## 🌐 Live Demo
-You can view my live website here: *(https://mduman31.github.io/myfirstwebsite/)*
+You can view my live website here: **[https://mduman31.github.io/myfirstwebsite/](https://mduman31.github.io/myfirstwebsite/)**
 
 ---
 
-## 📝 About This Project
-This is my very first web development project. I styled it with a beautiful mermaid teal and aqua aesthetic, featuring centered text, soft shadows, and clean typography.
-
-### Future Enhancements Plan:
-* Add a profile image or a custom mermaid graphic.
-* Create a multi-page layout with a navigation bar.
-* Build interactive buttons and a contact form.
+## 📝 About Me & This Project
+This project serves as an introduction to Information Technology workflows, showcasing my life, hobbies, and career goals:
+* **About Me:** My name is MaryAnn Duman. I love to learn a lot of new ways about introduction information technology.
+* **Family & Home:** I am a mom of my own 6 kids (4 girls ages 14, 11, 8, and 5; 2 boys ages 6 and 2) and I am a fiancée and stepmom to his 4 sons.
+* **Hobbies:** I love playing Fortnite on my PS5 in my spare time. 🎮
+* **Career Goals:** My dream job is Network Systems Administration & Engineering. 💻⚡
+* **Local Integration:** Real-time weather integration for New Castle, Delaware (19720).
 
 ---
 
 ## 📂 Project Source Code
 
 ### 1. HTML File (`index.html`)
-This file controls the layout and structural elements of the webpage:
+The main markup file providing the structural layout and containing the live weather widget integration. You can find the full HTML source structure in the project repository.
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is my website</title>
-     <style>
-        body {
-            background-color: #4db6ac; /* Mermaid teal/aqua color */
-            color: #ffffff; /* White text for contrast */
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 50px;
-        }
-    </style>
-</head>
-<body>
-   <h1>Hello World</h1>
-   <p>my name is MaryAnn Duman</p>
-   <p>I love to learn alot of new ways about introduction information technology</p>
-   <p>I am mom of my own 6 kids 4 girls ages 11,5,8,14 and my 2 boys are 2,and 6 and i am a fiance and step mom to his 4 sons</p>
-   <p>I love playing Ps5 fortnite on my sparetime</p>
-   <h2>Welcome to my website</h2>
-   <p>My dream job is Networking Administrator Engineering</p>
-</body>
-</html>
+### 2. Stylesheet File (`css/styles.css`)
+Handles the mermaid teal/aqua aesthetic, responsive grid alignment, and translucent frosted-glass card properties. You can view the full CSS implementation details in the project repository.
