@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is my website - MaryAnn Duman</title>
+    <!-- Font Awesome Link for Social Media Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         /* Core Layout with Matte Red & Metallic Gold Aesthetic */
         body {
@@ -16,6 +18,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            scroll-behavior: smooth; /* Enables smooth scrolling back to the top */
         }
 
         .container {
@@ -122,12 +125,78 @@
             width: 100%;
             margin-top: 15px;
         }
+
+        /* Premium Crimson & Metallic Gold Footer Styling */
+        footer {
+            margin-top: 50px;
+            padding: 25px 20px;
+            text-align: center;
+            background: rgba(139, 30, 38, 0.25); /* Translucent red glass tint matching layout */
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-top: 1px solid rgba(212, 175, 55, 0.3); /* Metallic gold accent line */
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            transition: text-shadow 0.3s ease;
+        }
+
+        footer p:hover {
+            text-shadow: 0 0 8px rgba(252, 246, 186, 0.6); /* Soft gold shimmer glow on text hover */
+        }
+
+        /* Social Media Link Styling */
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-icon {
+            color: #F7E7C4;
+            font-size: 1.4rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            color: #FCF6BA; /* Bright metallic gold highlight on hover */
+            transform: scale(1.2);
+        }
+
+        /* Quick Navigation Back to Top Anchor Link */
+        .top-link {
+            color: #BF953F;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 5px;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            opacity: 0.8;
+        }
+
+        .top-link:hover {
+            opacity: 1;
+            color: #FCF6BA;
+            transform: translateY(-3px);
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <header>
+        <!-- Added top ID anchor for the smooth-scroll feature -->
+        <header id="top">
             <p class="intro-text">This is my website</p>
             <h1>Hello World</h1>
             <p class="intro-text">My name is MaryAnn Duman</p>
@@ -164,11 +233,24 @@
                     <!-- Live Weather Widget Embedding -->
                     <a class="weatherwidget-io" href="https://forecast7.com" data-label_1="NEW CASTLE" data-label_2="WEATHER" data-font="Helvetica" data-icons="Climacons Animated" data-mode="Current" data-theme="pure" data-basecolor="rgba(139, 30, 38, 0)" data-accent="rgba(212, 175, 55, 1)" data-textcolor="#F7E7C4">NEW CASTLE WEATHER</a>
                     <script>
-                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io;}}(document,'script','weatherwidget-io-js');
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io';}}(document,'script','weatherwidget-io-js');
                     </script>
                 </div>
             </div>
         </div>
+
+        <!-- Custom Matte Red & Metallic Gold Footer -->
+        <footer>
+            <div class="social-links">
+                <!-- Replace '#' with your actual profile links if desired -->
+                <a href="#" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon" title="PlayStation"><i class="fab fa-playstation"></i></a>
+                <a href="#" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>© 2026 MaryAnn Duman. All Rights Reserved.</p>
+            <a href="#top" class="top-link"><i class="fas fa-arrow-up"></i> Back to Top</a>
+        </footer>
     </div>
 
 </body>
